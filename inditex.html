@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Matemática</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="seleccion-personaje">
+        <h1>Aventura Matemática</h1>
+        <p>Elige a tu héroe:</p>
+        <div class="personajes">
+            <div class="personaje" onclick="seleccionarPersonaje('aventurero')">
+                <img src="assets/personajes/aventurero.png" alt="Aventurero">
+                <p>Aventurero</p>
+            </div>
+            <div class="personaje" onclick="seleccionarPersonaje('exploradora')">
+                <img src="assets/personajes/exploradora.png" alt="Exploradora">
+                <p>Exploradora</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="nivel-historia" style="display: none;">
+        <h2 id="titulo-historia"></h2>
+        <p id="descripcion-historia"></p>
+        <button onclick="iniciarCamino()">Comenzar</button>
+    </div>
+
+    <div id="tablero" style="display: none;">
+        <div id="camino">
+            <div id="personaje-container">
+                <img id="personaje-img" src="" alt="Personaje" style="width: 150px;">
+            </div>
+            <div id="preguntas-camino"></div>
+        </div>
+    </div>
+
+    <div id="problema-container" style="display: none;">
+        <h3>Problema:</h3>
+        <p id="problema-texto"></p>
+        <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+        <button onclick="verificarRespuesta()">Enviar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+#seleccion-personaje {
+    background: linear-gradient(to bottom, #ffeb99, #ffcc66);
+    padding: 20px;
+}
+
+.personajes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.personaje {
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#nivel-historia {
+    background: #d6eaf8;
+    padding: 20px;
+}
+
+#camino {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    height: 100vh;
+    background: url('assets/fondos/nivel1-fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#personaje-container {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    transition: all 0.5s ease;
+}
+
+#preguntas-camino {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+#preguntas-camino button {
+    background-color: #ffcc66;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#preguntas-camino button:hover {
+    transform: scale(1.1);
+}
+
+#problema-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    display: none;
+}
+
+#problema-texto {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#respuesta {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
